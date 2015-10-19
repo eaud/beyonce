@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+@import url(http://fonts.googleapis.com/css?family=Mystery+Quest);
+
+body {
+  /*background: url(http://subtlepatterns.com/images/transp_bg.png);*/
+  background-image:url(images/beyckround5.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-position: top;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+
+}
+
+button {
+  display: block;
+  margin: 75px auto;
+  width: 200px;
+  height: 200px;
+  background-image: url(http://media4.popsugar-assets.com/files/2014/09/03/791/n/1922398/0dc7867952fbc808_beyonce-gifOBTciO.xxxlarge/i/Beyonce-Dancing-GIFs.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Amatic SC';
+  color: #ffffff;
+  font-size: 34pt;
+  border-radius: 100px;
+  box-shadow: 6px 6px 6px #d7d7d7;
+
+}
+
+button:hover {
+  cursor: pointer;
+  }
+
+button:active {
+  box-shadow: 2px 2px 2px #777;
+  border-bottom: 1px solid #0045A6;
+  transform: translateY(3px); translateZ(10px);
+}
+
+h2 {
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-top: 20px;
+  text-decoration: overline;
+}
+
+p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  color: #ffffff;
+  margin: 0 auto;
+  display: inline;
+}
+
+div {
+  font-family: 'Amatic SC', cursive;
+
+}
+
+#content {
+  margin: 0 auto;
+  width: 700px;
+  background-color: rgba(245, 173, 200, 1);
+  /*background-image: url('http://37.media.tumblr.com/49718f95de4b26c85c7cb43a4d4cd04b/tumblr_n43i0v0hhG1rbl71oo1_250.gif');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: auto;*/
+}
+
+#header {
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+#title {
+  font-family: 'Amatic SC', cursive;
+  font-size: 100px;
+  color: #ffffff;
+  float: left;
+  height: 115px;
+  padding-left: 20px;
+}
+
+#intro {
+  padding-left: 20px;
+}
+
+#game {
+  width: 700px;
+}
+
+#mins, #semi, #secs, #p1m, #p1c, #p1s, #p2m, #p2c, #p2s, #p3m, #p3c, #p3s {
+  display: inline;
+  font-family:  'Amatic SC', cursive;
+}
+
+#scoreboard {
+  display: inline;
+  padding-left: 60px;
+}
+
+#player1, #player2, #player3 {
+  padding-left: 60px;
+}
+
+
+
+/*For Testing*/
+#reset {
+  /*background-color: red;*/
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+
+}
+
+#timer {
+  font-family: sans-serif;
+  font-size: 30px;
+  float: right;
+  text-align: right;
+  padding: 10px 20px 0px 0px;
+}
+
+#scoreboard {
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+}
+
+#beyonce {
+  font-weight: bolder;
+  font-size: 50px;
+  margin-top: 20px;
+
+}
+
+#kelly {
+
+}
+
+.stage {
+  width:800px;
+  margin: 0 auto;
+}
+
+
+.row {
+  width: 690px;
+  margin: 0 auto;
+}
+
+.column {
+  border: 1px solid rgba(217, 100, 150, 0.5);
+  float: left;
+  /*font-family: 'Amatic SC';
+  font-size: 50px;*/
+  height: 180px;
+  margin: 5px;
+  text-align: center;
+  vertical-align: middle;
+  width: 180px;
+  cursor: pointer;
+
+}
+
+.column:hover {
+  background-color: #25202E;
+}
+
+/* when two cards match apply this class to them*/
+.found {
+  background: linear-gradient(#493F59, #25202E);
+  color: #FFFFFF;
+}
+
+/* apply to every card when the user wins */
+.won {
+  /*background-color: #F2F0CE;*/
+  background-image: url(http://31.media.tumblr.com/74cd670e921475a5f412b9951896e221/tumblr_mr8ao6e2RH1qkm654o1_500.gif);
+  border: 1px solid #83A603;
+  color: #83A603;
+}
+
+.bestiny {
+  background-color: #25202E;
+  width: 600px;
+  height: 300px;
+  text-align: center;
+  font-size: 35px;
+  color: #ffffff;
+  padding: 0px 40px;
+  margin: 0 auto;
+}
+
+.winMessage {
+  font-family:  'Amatic SC', cursive;
+  font-size: 150pt;
+  color: #ffffff;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  width: 700px;
+  font-weight: bolder;
+}

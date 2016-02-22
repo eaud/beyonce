@@ -90,9 +90,9 @@ var CardGame = (function(){
   var player = 1;
 	 //---------functions-------------------------------------------------------//
 
-//creatCards() uses the CardObjCreator to make an array of card objects that
-//contain a designated photo and "single" that will be used to track the cards
-// during play; we push each beyonce object twice to create a pair (this might fuck me up later);
+// creatCards() uses the CardObjCreator to make an array of card objects that
+// contain a designated photo and "single" that will be used to track the cards
+// during play; we push each beyonce object twice to create a pair (this might screw me up later);
 // it closes by randomizing the array of objects so that when
 // they are rendered as front-end elements, we can just loop through the array
 return {
@@ -109,14 +109,14 @@ return {
      beyObjArray.push(michelleObj);
      beyObjArray = shuffle(beyObjArray);
    },
-
+//
 	renderCards : function() {
     container.html('');
     var theStage = $('<div>');
     theStage.addClass('stage');
     for (var i = 0; i < beyObjArray.length; i++){
     	if(i % 3 === 0){
-        var row = $('<div>');
+				var row = $('<div>');
         row.addClass('row');
         theStage.append(row);
       }
@@ -130,7 +130,7 @@ return {
 	},
 
 	makePlay : function(event) {
-     //use jQuery to call the data-code of what was clicked, use that as key in the
+     //use jQuery to call the data-code of what was clicked
 		event.currentTarget.classList.add("found");
 		event.currentTarget.classList.add("clicked");
     var beyCurrentHit = event.currentTarget.id;
@@ -145,7 +145,8 @@ return {
       if(beyCurrentHit === 'reset'){
       alert('uh oh, Michelle through the trap door! Take it again from the top');
       $('.stage').remove();
-      //HERE WE WOULD CALL THE CHOREO MODULE STARTER;
+      //In future versions, this would trigger a modal that creates an interstitial challenge
+			// for the user.  For now, we reset the board(below) but leave the timer running.
       CardGame.createCards();
       CardGame.renderCards();
      }}, 1400);

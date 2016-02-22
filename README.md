@@ -1,10 +1,13 @@
-
-### BeBeyonce
+### Beyonce
 v1 created Nov. 2015.
 
 Readme updated 02/21/2016.
 
-## BeBeyonce(Working Title) is a memory game that chronicles the trials and tribulations of becoming Beyoncé.
+## This is a simple memory game that chronicles the trials and tribulations of becoming Beyoncé.  
+
+Created with simple JS/JQuery, CSS, & HTML.
+
+To play, match Bey's famous moves - but watch out: Michelle is lurking in there somewhere ready to ruin the whole number.  Trials are timed.  Play with two friends and get the lowest time.
 
 I made this project to practice javascript basics.
 
